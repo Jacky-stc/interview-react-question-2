@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --main-bg-color--:#ffffff;
+  ---hover-bg-color--:#e6e6e6;
+  ---today-bg-color--:#ffff76 ;
+  ---active-bg-color--:#006edc  ;
+}
+
+.date-wrapper{
+  width: 350px;
+  height: 240px;
+  font-size: 16px;
+  background-color: var(--main-bg-color--);
+  color: #060606;
+
+}
+.date-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 44px;
+  margin-bottom: 16px;
+}
+.date-select-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: var(--main-bg-color--);
+  user-select: none;
+  cursor: pointer;
+}
+.date-select-btn:hover{
+  background-color: var(---hover-bg-color--);
+}
+.date-day-wrapper{
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.date-day{
+  width: 50px;
+  height: 36px;
+  user-select: none;
+  cursor: pointer;
+  background-color: var(--main-bg-color--);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active:hover{
+  background-color: var(---hover-bg-color--);
+}
+.inactive{
+  background-color: var(--main-bg-color--) !important;
+  color: #757575;
+  cursor: not-allowed;
+}
+
+.today{
+  background-color: var(---today-bg-color--);
+}
+.selected{
+  background-color: var(---active-bg-color--);
+}
+.selected:hover{
+  background-color: var(---active-bg-color--);
+}
+.date-select-range{
+  width: 350px;
+  height: 44px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);;
+}
