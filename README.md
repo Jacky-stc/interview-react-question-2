@@ -12,7 +12,7 @@ Follow these steps to build and run the project:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Jacky-stc/interview-react-question-2.git
-cd <project-folder-name>
+cd interview-react-question-2
 ```
 ### 2. Install dependencies
 Ensure you have Node.js and npm (or yarn) installed.
